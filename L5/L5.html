@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Example with Background Image</title>
+    <style>
+        body {
+            background-image: url("L5.jpg");
+            /* you can also use a web URL or base64 encoded image data */
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* this will make the image cover the entire background area */
+        }
+
+        form {
+            margin: 150px;
+            margin-left: 400px;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* this will create a semi-transparent white background for the form */
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="question">Sherlock Holmes received an anonymous message containing a code related to a planned bank robbery. With his
+        investigative skills, he deciphered the code and discovered the location of the planned heist. He quickly acted with Dr.
+        John Watson to prevent the robbery and bring the culprits to justice. Sherlock's sharp mind and keen sense of
+        observation allowed him to solve the case with ease, demonstrating once again why he is considered one of the greatest
+        detectives of all time.
+        The code that he received is "43 32 13 13". 
+        
+        </label>
+
+
+        <label for="answer">Answer:</label>
+        <input type="text" id="answer" name="answer" placeholder="Enter your answer here">
+
+        <input type="submit" value="Submit">
+    </form>
+    <script src="L4.js"></script>
+</body>
+
+</html>
