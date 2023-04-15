@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Example with Background Image</title>
+    <style>
+        body {
+            background-image: url("L1.png");
+            /* you can also use a web URL or base64 encoded image data */
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* this will make the image cover the entire background area */
+        }
+
+        form {
+            margin: 150px;
+            margin-left:400px;
+            max-width: 600px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* this will create a semi-transparent white background for the form */
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="question">As a consulting detective, I have been presented with various tests of my deductive abilities. In one scenario, I was
+        faced with four identical-looking bottles, labelled 1,2,3,4 respectively, three of which contained a lethal poison.
+        However,
+        I was also given a note that read: '63 40 151 156 40 142 151 156 141 162 171 50 63 40 142 151 164 163 51' Given this information,
+        which bottle would I choose to drink from? Write your answer after you decode the Note.
+</label>
+        
+
+        <label for="answer">Answer:</label>
+        <input type="text" id="answer" name="answer" placeholder="Enter your answer here">
+
+        <input type="submit" value="Submit">
+    </form>
+    <script src="L1.js"></script>
+</body>
+
+</html>
